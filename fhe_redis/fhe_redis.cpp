@@ -30,7 +30,7 @@ int FheSetPkCommand(RedisModuleCtx *ctx, RedisModuleString **argv, int argc)
     }
 
     RedisModule_ReplyWithSimpleString(ctx, "OK");
-    return REDISMODULE_ERR;
+    return REDISMODULE_OK;
 }
 
 int FheSetCommand(RedisModuleCtx *ctx, RedisModuleString **argv, int argc)
@@ -45,7 +45,7 @@ int FheSetCommand(RedisModuleCtx *ctx, RedisModuleString **argv, int argc)
     }
 
     RedisModule_ReplyWithSimpleString(ctx, "OK");
-    return REDISMODULE_ERR;
+    return REDISMODULE_OK;
 }
 
 int FheGetCommand(RedisModuleCtx *ctx, RedisModuleString **argv, int argc)
